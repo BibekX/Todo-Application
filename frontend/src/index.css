@@ -1,0 +1,115 @@
+/* Root */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Generic */
+.btn {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.btn:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
+}
+
+/* Navbar */
+#navbar {
+  background-color: aqua;
+}
+
+.txt {
+  text-decoration: none;
+}
+
+.todo-logo {
+  height: 40px;
+  margin-left: 10px;
+}
+
+.logout-btn {
+  color: white !important;
+}
+
+.login-btn {
+  background-color: transparent !important;
+  color: green !important;
+}
+
+/* Landing Page */
+.landingPage {
+  height: 91.8vh;
+  background-size: cover;
+  padding-top: 100px;
+  background-image: url(https://images.pexels.com/photos/94273/jetty-beach-sunset-sea-94273.jpeg);
+}
+
+/* Login Form */
+.login {
+  max-width: 450px;
+  margin: 0 auto 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.formGroup {
+  margin: 20px 0;
+}
+
+.submit-btn {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.link {
+  display: block;
+  text-align: right;
+}
+
+/* Todo Page */
+.todo-container {
+  min-height: 91.2vh;
+  background-color: CadetBlue;
+}
+
+.heading {
+  text-align: center;
+  font-size: 8vh;
+  color: white;
+  padding: 3vh 0;
+}
+
+/* Input Area */
+
+/* .add-btn {
+  margin-left: 0.5vw;
+} */
+
+.add-btn-img {
+  height: 3vh;
+}
+
+.delete-btn-img {
+  height: 3vh;
+}
+
+.todo-item {
+  background-color: #e6e6fa !important;
+}
