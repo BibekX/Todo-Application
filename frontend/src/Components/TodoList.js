@@ -19,14 +19,15 @@ const TodoList = () => {
   const submitTodo = (e) => {
     e.preventDefault();
     const newTodo = { title };
-    title.length > 0 && dispatch(AddTodoThunk(newTodo)) && setTitle("");
+    title.length > 0 && dispatch(AddTodoThunk(newTodo));
+    setTitle("");
   };
 
   const editTodoTitle = (e, id) => {
     e.preventDefault();
     editedTitle.length > 0 &&
-      dispatch(EditTodoThunk({ title: editedTitle, id: id })) &&
-      setTitle("");
+      dispatch(EditTodoThunk({ title: editedTitle, id: id }));
+    setTitle("");
   };
 
   const deleteTodo = (e, i) => {

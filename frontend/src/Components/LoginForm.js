@@ -16,7 +16,6 @@ function LoginForm(props) {
   let history = useHistory();
 
   let authenticated = useSelector((state) => state.authStore.auth);
-  console.log("AUTH", authenticated);
 
   useEffect(() => {
     if (authenticated) {
