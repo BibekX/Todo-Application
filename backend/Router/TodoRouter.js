@@ -26,10 +26,11 @@ class TodoRouter {
 
     return router;
   }
+
   login(req, res) {
     return this.todoService
       .login(req.body.email, req.body.password)
-      .then((token) => res.json(token));
+      .then((token) => (token ? res.json(token) : res.sendStatus(401)));
   }
 
   signup(req, res) {
